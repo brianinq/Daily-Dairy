@@ -50,5 +50,14 @@ nav{
     margin: 20px auto;
 }
 fieldset{
+    margin: 10px 0;
     padding: 20px;
+    border: 1px solid #1e1ef2;
+    border-radius: 5px;
+}
+legend{
+    padding: 2px 5px;
+    background: #fff;
+    border: 1px solid rgba(0, 0,0, 0.2);
+    border-radius: 3px;
 }
