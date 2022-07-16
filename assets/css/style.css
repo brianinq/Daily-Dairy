@@ -24,7 +24,7 @@ button{
 nav{
     display: flex;
     margin: 0 auto;
-    width: 80vw;
+    width: 90vw;
     justify-content: space-between;
     align-items: center;
     align-self: center;
@@ -33,4 +33,22 @@ nav{
     font-size: 2.5rem;
     font-family: 'Rubik Moonrocks', cursive;
     color: #000;
+}
+.form input{
+    outline: none;
+    border: 1px solid rgba(0, 0,0, 0.2);
+    border-radius: 3px;
+    background: #fff;
+    padding: 5px 10px;
+    color: #000;
+}
+.form label{
+    margin-right: 20px;
+}
+.content{
+    width: 90vw;
+    margin: 20px auto;
+}
+fieldset{
+    padding: 20px;
 }
