@@ -50,14 +50,64 @@ nav{
     margin: 20px auto;
 }
 fieldset{
-    margin: 10px 0;
-    padding: 20px;
+    margin: 10px 0 0;
+    padding: 30px 20px;
     border: 1px solid #1e1ef2;
     border-radius: 5px;
+}
+fieldset button{
+    margin-top: 10px;
 }
 legend{
     padding: 2px 5px;
     background: #fff;
     border: 1px solid rgba(0, 0,0, 0.2);
     border-radius: 3px;
+}
+.content{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+table{
+    border: 1px solid #1e1ef2;
+    width: calc(90vw/3);
+    border-radius: 5px;
+    padding: 20px;
+}
+caption{
+    font-weight: 600;
+    font-size: 1.5rem;
+    padding-bottom: 20px;
+}
+th, td {
+  padding: 5px 30px;
+  text-align: left;
+  border-bottom: 1px solid #DDD;
+}
+.yearly{
+    width: 90vw;
+    margin: 50px auto;
+}
+.yearly table{
+    width: 100%;
+    padding: 10px;
+}
+
+@media screen and (max-width: 1200px){
+    table{
+        width: 100%;
+    }
+    .form{
+        width: 100%;
+    }
+}
+.totals td{
+    border-bottom: none;
+}
+.totals{
+    /* background: #fff; */
+    /* color: #000; */
+    font-size: 1.2rem;
+    font-weight: bold;
 }
