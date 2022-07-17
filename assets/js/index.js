@@ -29,6 +29,20 @@ function weeklyProduction(shedA, shedB, shedC, shedD, daysTotal) {
   incomeOverTime(sellingPrice, daysTotal);
   getYearlyStats(daySum, sellingPrice);
 }
+const incomeOverTime = (sellingPrice, opDay, time = 1) => {
+  weeklyIncome.textContent = sellingPrice * opDay * DAYS_OF_WEEK;
+  yearlyIncome.textContent = sellingPrice * opDay * DAYS_IN_YEAR;
+  yrTotals.textContent = opDay * DAYS_IN_YEAR;
+  totalIncome.textContent = sellingPrice * opDay * DAYS_IN_YEAR;
+};
+
+let shedALitres;
+let shedBLitres;
+let shedCLitres;
+let shedDLitres;
+
+const noOfDays = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+
 form.addEventListener("submit", (event) => {
   event.preventDefault();
   daySum = 0;
