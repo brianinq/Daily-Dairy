@@ -23,18 +23,18 @@
       <div class="content">
         <div class="form">
           <h2>Lets Start by getting todays output</h2>
-          <form action="#" method="post">
+          <form action="#" method="post" id="post">
             <fieldset>
               <legend>Enter Daily output in litres for each cow shed:</legend>
               <label for="shedA">Shed A:</label>
-              <input required type="number" id="shedA" name="fname" /><br /><br />
+              <input required type="number" id="shedA" name="shedA" /><br /><br />
               <label for="shedB">Shed B:</label>
-              <input required type="number" id="shedB" name="fname" /><br /><br />
+              <input required type="number" id="shedB" name="shedB" /><br /><br />
               <label for="shedC">Shed C:</label>
-              <input required type="number" id="shedC" name="fname" /><br /><br />
+              <input required type="number" id="shedC" name="shedC" /><br /><br />
               <label for="shedD">Shed A:</label>
-              <input required type="number" id="shedD" name="fname" /><br /><br />
-              <div class="btndiv"><button>Compute</button></div>
+              <input required type="number" id="shedD" name="shedD" /><br /><br />
+              <div class="btndiv"><button type="submit">Compute Stats</button></div>
             </fieldset>
           </form>
         </div>
@@ -49,26 +49,26 @@
           </tr>
           <tr>
             <td>Shed A</td>
-            <td>0000</td>
+            <td class="sheds">0000</td>
           </tr>
           <tr>
             <td>Shed B</td>
-            <td>0000</td>
+            <td class="sheds">0000</td>
           </tr>
           <tr>
             <td>Shed C</td>
-            <td>0000</td>
+            <td class="sheds">0000</td>
           </tr>
           <tr>
             <td>Shed D</td>
-            <td>0000</td>
+            <td class="sheds">0000</td>
           </tr>
           <tr class="totals">
             <td>Totals</td>
-            <td>0000</td>
+            <td class="sheds">0000</td>
           </tr>
         </table>
-        <table>
+        <table class="weekly">
           <caption>
             Weekly Output
           </caption>
@@ -78,23 +78,23 @@
           </tr>
           <tr>
             <td>Shed A</td>
-            <td>0000</td>
+            <td class="shed">0000</td>
           </tr>
           <tr>
             <td>Shed B</td>
-            <td>0000</td>
+            <td class="shed">0000</td>
           </tr>
           <tr>
             <td>Shed C</td>
-            <td>0000</td>
+            <td class="shed">0000</td>
           </tr>
           <tr>
             <td>Shed D</td>
-            <td>0000</td>
+            <td class="shed">0000</td>
           </tr>
           <tr class="totals">
-            <td>Weekly Totals</td>
-            <td>0000</td>
+            <td>Totals</td>
+            <td class="shed">0000</td>
           </tr>
         </table>
       </div>
@@ -107,7 +107,7 @@
       <div class="yearly">
         <table>
           <caption>
-            Expected output through the year
+            Expected income through the year
           </caption>
           <tr>
             <th>Month</th>
@@ -116,68 +116,68 @@
           </tr>
           <tr>
             <td>January</td>
-            <td>0000</td>
-            <td>0000</td>
+            <td class="jan">0000</td>
+            <td class="jan">0000</td>
           </tr>
           <tr>
             <td>February</td>
-            <td>0000</td>
-            <td>0000</td>
+            <td class="feb">0000</td>
+            <td class="feb">0000</td>
           </tr>
           <tr>
             <td>March</td>
-            <td>0000</td>
-            <td>0000</td>
+            <td class="mar">0000</td>
+            <td class="mar">0000</td>
           </tr>
           <tr>
             <td>April</td>
-            <td>0000</td>
-            <td>0000</td>
+            <td class="apr">0000</td>
+            <td class="apr">0000</td>
           </tr>
           <tr>
             <td>May</td>
-            <td>0000</td>
-            <td>0000</td>
+            <td class="may">0000</td>
+            <td class="may">0000</td>
           </tr>
           <tr>
             <td>June</td>
-            <td>0000</td>
-            <td>0000</td>
+            <td class="jun">0000</td>
+            <td class="jun">0000</td>
           </tr>
           <tr>
             <td>July</td>
-            <td>0000</td>
-            <td>0000</td>
+            <td class="july">0000</td>
+            <td class="july">0000</td>
           </tr>
           <tr>
             <td>August</td>
-            <td>0000</td>
-            <td>0000</td>
+            <td class="aug">0000</td>
+            <td class="aug">0000</td>
           </tr>
           <tr>
             <td>September</td>
-            <td>0000</td>
-            <td>0000</td>
+            <td class="sept">0000</td>
+            <td class="sept">0000</td>
           </tr>
           <tr>
             <td>October</td>
-            <td>0000</td>
-            <td>0000</td>
+            <td class="oct">0000</td>
+            <td class="oct">0000</td>
           </tr>
           <tr>
             <td>November</td>
-            <td>0000</td>
-            <td>0000</td>
+            <td class="nov">0000</td>
+            <td class="nov">0000</td>
           </tr>
           <tr>
             <td>December</td>
-            <td>0000</td>
-            <td>0000</td>
+            <td class="dec">0000</td>
+            <td class="dec">0000</td>
           </tr>
           <tr class="totals">
             <td>Yearly Totals</td>
-            <td>0000</td>
-            <td>0000</td>
+            <td class="yrTotals">0000</td>
+            <td class="totalIncome">0000</td>
           </tr>
         </table>
       </div>
