@@ -1,1 +1,13 @@
-alert("working");
+const form = document.querySelector("#post");
+const dailyTable = document.querySelectorAll(".sheds");
+const weeklyTable = document.querySelectorAll(".weekly td.shed");
+const yearlyIncome = document.querySelector(".yearlyCash span");
+const weeklyIncome = document.querySelector(".weeklyCash span");
+const changePrice = document.querySelector(".btnPrice");
+const price = document.querySelector(".price");
+const totalIncome = document.querySelector(".totalIncome");
+const yrTotals = document.querySelector(".yrTotals");
+const DAYS_OF_WEEK = 7;
+const DAYS_IN_YEAR = 365;
+let sellingPrice = 45;
+let daySum = 0;
