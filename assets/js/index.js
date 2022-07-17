@@ -29,3 +29,19 @@ function weeklyProduction(shedA, shedB, shedC, shedD, daysTotal) {
   incomeOverTime(sellingPrice, daysTotal);
   getYearlyStats(daySum, sellingPrice);
 }
+form.addEventListener("submit", (event) => {
+  event.preventDefault();
+  daySum = 0;
+  shedBLitres = Number(form["shedB"].value);
+  shedALitres = Number(form["shedA"].value);
+  shedCLitres = Number(form["shedC"].value);
+  shedDLitres = Number(form["shedD"].value);
+  totalProduction(shedALitres, shedBLitres, shedCLitres, shedDLitres);
+});
+
+changePrice.addEventListener("click", () => {
+  let input = prompt("Enter new selling price (Ksh/lit):");
+  sellingPrice = Number(input) ? Number(input) : sellingPrice;
+  price.textContent = sellingPrice;
+  totalProduction(shedALitres, shedBLitres, shedCLitres, shedDLitres);
+});
