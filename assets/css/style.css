@@ -18,8 +18,10 @@ button{
     border: none;
     padding: 10px 20px;
     background: #1e1ef2;
+    color: #dad5e1;
     border-radius: 5px;
     font-size: 1.2rem;
+    cursor: pointer;
 }
 nav{
     display: flex;
@@ -47,7 +49,7 @@ nav{
 }
 .content{
     width: 90vw;
-    margin: 20px auto;
+    margin: 40px auto;
 }
 fieldset{
     margin: 10px 0 0;
@@ -110,4 +112,17 @@ th, td {
     /* color: #000; */
     font-size: 1.2rem;
     font-weight: bold;
+}
+.op{
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px auto;
+}
+.btnPrice{
+    margin-top: 10px;
+}
+.op h3{
+    margin: 5px 0;
 }
